@@ -5,6 +5,7 @@ accessToken = "" #put your access token between the quotes.
 
 def setheaders():
     accessToken_hdr = 'Barer' + accessToken
+    spark_header = {'Authorization': accessToken_hdr, 'content-type':'application/json; charset-UTF-8'}
 
 accessToken_hdr = 'Bearer ' + accessToken
 webex_header = {'Authorization': accessToken_hdr}
