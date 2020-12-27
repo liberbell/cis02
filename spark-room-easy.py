@@ -1,17 +1,17 @@
 import json
 import requests
 
-accessToken = "" #put your access token between the quotes.
+accessToken = "abcdefg" #put your access token between the quotes.
 
-def setHeaders():
-    accessToken_hdr = 'Barer' + accessToken
-    spark_header = {'Authorization': accessToken_hdr, 'content-type':'application/json; charset-UTF-8'}
-    return spark_header
+# def setHeaders():
+#     accessToken_hdr = 'Barer' + accessToken
+#     spark_header = {'Authorization': accessToken_hdr, 'content-type':'application/json; charset-UTF-8'}
+#     return spark_header
 
-def getRoom():
-    uri = 'https://api.ciscospark.com/v1/rooms'
-    resp = requests.get(uri, headers=theHeader)
-    return resp.json()
+# def getRoom():
+#     uri = 'https://api.ciscospark.com/v1/rooms'
+#     resp = requests.get(uri, headers=theHeader)
+#     return resp.json()
 
 accessToken_hdr = 'Bearer ' + accessToken
 webex_header = {'Authorization': accessToken_hdr}
