@@ -3,6 +3,8 @@ import requests
 
 accessToken = "" #put your access token between the quotes.
 
+def setheaders():
+    accessToken_hdr = 'Barer' + accessToken
 
 accessToken_hdr = 'Bearer ' + accessToken
 webex_header = {'Authorization': accessToken_hdr}
