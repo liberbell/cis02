@@ -10,6 +10,8 @@ def setHeaders():
 
 def getRoom():
     uri = 'https://api.ciscospark.com/v1/rooms'
+    resp = requests.get(uri, headers=theHeader)
+    return resp.json()
 
 accessToken_hdr = 'Bearer ' + accessToken
 webex_header = {'Authorization': accessToken_hdr}
